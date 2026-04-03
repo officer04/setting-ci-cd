@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 export const Counter = () => {
   const [count, setCount] = useState(0);
-  let arr: number[] = [1,2,3]
 
   return (
     <div>
