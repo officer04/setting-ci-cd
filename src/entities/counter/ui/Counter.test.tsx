@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Counter } from './Counter';
 import { describe, test, expect } from 'vitest'
+import '@testing-library/jest-dom/vitest'
 
 describe('Counter component', () => {
   test('отображает начальное значение 0', () => {
