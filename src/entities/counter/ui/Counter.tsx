@@ -15,7 +15,7 @@ export const Counter = () => {
   const getPosts = async () => {
     setIsLoading(true)
     try {
-      const res = await fetch(import.meta.env.VITE_POSTS_API_URL);
+      const res = await fetch("https://jsonplaceholder.typicode.com/posts");
       const data = await res.json();
       setPost(data);
     } catch (error) {
